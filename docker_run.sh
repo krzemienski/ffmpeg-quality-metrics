@@ -30,7 +30,7 @@ docker run \
     --rm \
     -v "$distDir":"/tmp/dist" \
     -v "$refDir":"/tmp/ref" \
-    -t ffmpeg_quality_metrics \
+    -t krzemienski/ffmpeg_quality_metrics \
     python3 -m ffmpeg_quality_metrics \
     "/tmp/dist/$distFileBasename" \
     "/tmp/ref/$refFileBasename" \
